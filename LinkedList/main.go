@@ -10,17 +10,9 @@ func main() {
 	ll.Append(NewNode("d"))
 	ll.Append(NewNode("e"))
 	ll.Append(NewNode("f"))
-	ll.InsertAt(NewNode("g"), 6)
+	ll.Append(NewNode("g"))
+	ll.Append(NewNode("h"))
 
-	fmt.Println(ll.Tail)
-	ll.InsertAt(NewNode("h"), 7)
-
-	ll.Reverse()
-	ll.IterateNodes()
-	ll.Reverse()
-	ll.IterateNodes()
-	ll.Reverse()
-	ll.IterateNodes()
-	fmt.Println(ll.Tail)
+	fmt.Println(ll.Middle())
 
 }
